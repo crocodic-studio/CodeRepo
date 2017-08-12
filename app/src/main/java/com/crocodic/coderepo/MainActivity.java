@@ -1,7 +1,7 @@
 package com.crocodic.coderepo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txtHalo = (TextView) findViewById(R.id.txt_halo);
+        txtHalo.setText("Hello world");
     }
 }
