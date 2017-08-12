@@ -8,4 +8,5 @@ import android.util.Log;
 
 public class SampleActivity {
     String nama;
+    String value;
 }
