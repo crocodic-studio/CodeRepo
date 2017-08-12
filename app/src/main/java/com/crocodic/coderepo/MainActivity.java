@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txtHalo = (TextView) findViewById(R.id.txt_halo);
-        txtHalo.setText("Hello world 2");
+        txtHalo.setText("Hello world 3");
     }
 }
