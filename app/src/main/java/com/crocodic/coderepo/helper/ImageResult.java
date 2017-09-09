@@ -36,6 +36,8 @@ import java.util.Locale;
 public class ImageResult {
 
     /**
+     *  This class is used to take pictures from camera, gallery with additional cropping images
+     *
      * Declaration :
      * ImageResult whatEver = new ImageResult(activity);
      *
