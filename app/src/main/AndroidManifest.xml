@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="true"
+        android:name=".CoreApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -16,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".picasso.PicassoSampleActivity"></activity>
+        <activity android:name=".realem.RealemActivity"></activity>
     </application>
 
 </manifest>
