@@ -2,11 +2,9 @@ package com.crocodic.coderepo.realem;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 import com.crocodic.coderepo.R;
-import com.crocodic.coderepo.helper.DB;
-import com.crocodic.coderepo.model.Fruit;
+import com.crocodic.coderepo.realem.model.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;

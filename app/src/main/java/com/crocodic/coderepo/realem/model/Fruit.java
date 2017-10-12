@@ -1,4 +1,4 @@
-package com.crocodic.coderepo.model;
+package com.crocodic.coderepo.realem.model;
 
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
