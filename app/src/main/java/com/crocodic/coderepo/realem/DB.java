@@ -11,6 +11,7 @@ import java.util.List;
 import io.realm.Realm;
 import io.realm.RealmObject;
 
+
 /**
  * Created by yzzzd crocodic on 9/18/17.
  */
@@ -72,10 +73,25 @@ public class DB {
         realm.commitTransaction();
     }
 
+
+    //// TODO: 12/11/17 CHANGE PARAMETER CLASS -> REALMOBJECT TYPE
+    public void saveObject(RealmObject object){
+        realm.beginTransaction();
+        realm.copyToRealm(object);
+        realm.commitTransaction();
+    }
+
+
     //// TODO: 10/11/17 READ
     public List<Fruit> getFruits(){
         return realm.copyFromRealm(realm.where(Fruit.class).findAll());
     }
+
+    //// TODO: 12/11/17 READ ALL PARAMETER REALM OBJECT CLASS
+    public <T extends RealmObject> List<T> findAll(Class<T> clazz) {
+        return realm.where(clazz).findAll();
+    }
+
 
     public Fruit getFruit(Integer id){
         return realm.copyFromRealm(realm.where(Fruit.class).equalTo("id", id).findFirst());

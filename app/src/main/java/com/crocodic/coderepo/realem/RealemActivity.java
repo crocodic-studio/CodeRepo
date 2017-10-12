@@ -26,7 +26,9 @@ public class RealemActivity extends AppCompatActivity {
 
         //// TODO: 10/11/17 CREATE
         DB.with(this).saveObject(buah); //// TODO: 10/11/17 BANYAK DATA
+
         DB.with(this).saveFruit(mangga); //// TODO: 10/11/17 SATU DATA
+        DB.with(this).saveObject(mangga); //// TODO: 12/11/17 SATU DATA
 
         Fruit apelHijau = new Fruit();
 
@@ -36,6 +38,7 @@ public class RealemActivity extends AppCompatActivity {
         List<Fruit> fruits = new ArrayList<>();
 
         fruits = DB.with(this).getFruits(); //// TODO: 10/11/17 BANYAK DATA
+        fruits = DB.with(this).findAll(Fruit.class); //// TODO: 121/11/17 BANYAK DATA
 
         //// TODO: 10/11/17 UPDATE
 
