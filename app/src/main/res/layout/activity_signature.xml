@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crocodic.coderepo.signature.SignatureActivity">
+
+    <LinearLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Done" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_above="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#dcdcdc"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:text="Hasil tandatangan:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/signature"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:text="Tandatangan dibawan sini:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.crocodic.signaturepad.SignaturePad
+                android:id="@+id/signature_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                app:penColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
